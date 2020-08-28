@@ -1,0 +1,296 @@
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ ls
+fourth.txt
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git status
+warning: could not open directory 'AppData/Local/Application Data/': Permission denied
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../learn-git-again/fourth.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../.bash_history
+        ../../.gitconfig
+        ../../.txt
+        ../../.vscode/
+        ../../3D Objects/
+        ../../AppData/
+        ../../Contacts/
+        ../GOMYCODE/
+        ../Microsoft Edge.lnk
+        ../desktop.ini
+        ../learn-again/
+        ../../Documents/
+        ../../Downloads/
+        ../../Favorites/
+        ../../Links/
+        ../../MicrosoftEdgeBackups/
+        ../../Music/
+        ../../NTUSER.DAT
+        ../../NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+        ../../NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+        ../../NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+        ../../OneDrive/
+        ../../Pictures/
+        ../../Saved Games/
+        ../../Searches/
+        ../../Videos/
+        ../../ntuser.dat.LOG1
+        ../../ntuser.dat.LOG2
+        ../../ntuser.ini
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global core.pager=cat
+error: invalid key: core.pager=cat
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global core.pager=cat -
+error: invalid key: core.pager=cat
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global core.pager="cat"
+error: invalid key: core.pager=cat
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global core.pager "cat"
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git log
+commit d7cf6aec1accb6bef3af35dcd602290483becb41 (HEAD -> master)
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 12:01:49 2020 +0200
+
+    removing third.txt
+
+commit 3a2ce61a4893cef54b8a75930184419758ce6030
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:59:03 2020 +0200
+
+    adding fourth.txt
+
+commit 6667e7fffc3e97eff14f496706bb5f0b02d71829
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:58:00 2020 +0200
+
+    adding third.txt
+
+commit 51dc1ac02c2cc254355e02bd924370e3329d42ea
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:52:30 2020 +0200
+
+    adding third.txt
+
+commit 72ddca75e954e94ecaff631b4026dfca2212347d
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:39:00 2020 +0200
+
+    adding third.txt
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git diff
+diff --git a/Desktop/learn-git-again/fourth.txt b/Desktop/learn-git-again/fourth.txt
+deleted file mode 100644
+index e69de29..0000000
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global core.pager cat
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git diff
+diff --git a/Desktop/learn-git-again/fourth.txt b/Desktop/learn-git-again/fourth.txt
+deleted file mode 100644
+index e69de29..0000000
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git diff
+diff --git a/Desktop/learn-git-again/fourth.txt b/Desktop/learn-git-again/fourth.txt
+deleted file mode 100644
+index e69de29..0000000
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git log
+commit d7cf6aec1accb6bef3af35dcd602290483becb41 (HEAD -> master)
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 12:01:49 2020 +0200
+
+    removing third.txt
+
+commit 3a2ce61a4893cef54b8a75930184419758ce6030
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:59:03 2020 +0200
+
+    adding fourth.txt
+
+commit 6667e7fffc3e97eff14f496706bb5f0b02d71829
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:58:00 2020 +0200
+
+    adding third.txt
+
+commit 51dc1ac02c2cc254355e02bd924370e3329d42ea
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:52:30 2020 +0200
+
+    adding third.txt
+
+commit 72ddca75e954e94ecaff631b4026dfca2212347d
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:39:00 2020 +0200
+
+    adding third.txt
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global core.pager less
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git log
+commit d7cf6aec1accb6bef3af35dcd602290483becb41 (HEAD -> master)
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 12:01:49 2020 +0200
+
+    removing third.txt
+
+commit 3a2ce61a4893cef54b8a75930184419758ce6030
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:59:03 2020 +0200
+
+    adding fourth.txt
+
+commit 6667e7fffc3e97eff14f496706bb5f0b02d71829
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:58:00 2020 +0200
+
+    adding third.txt
+
+commit 51dc1ac02c2cc254355e02bd924370e3329d42ea
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:52:30 2020 +0200
+
+    adding third.txt
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global core.pager cat
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git log
+commit d7cf6aec1accb6bef3af35dcd602290483becb41 (HEAD -> master)
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 12:01:49 2020 +0200
+
+    removing third.txt
+
+commit 3a2ce61a4893cef54b8a75930184419758ce6030
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:59:03 2020 +0200
+
+    adding fourth.txt
+
+commit 6667e7fffc3e97eff14f496706bb5f0b02d71829
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:58:00 2020 +0200
+
+    adding third.txt
+
+commit 51dc1ac02c2cc254355e02bd924370e3329d42ea
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:52:30 2020 +0200
+
+    adding third.txt
+
+commit 72ddca75e954e94ecaff631b4026dfca2212347d
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:39:00 2020 +0200
+
+    adding third.txt
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global core.pager less
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git log
+commit d7cf6aec1accb6bef3af35dcd602290483becb41 (HEAD -> master)
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 12:01:49 2020 +0200
+
+    removing third.txt
+
+commit 3a2ce61a4893cef54b8a75930184419758ce6030
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:59:03 2020 +0200
+
+    adding fourth.txt
+
+commit 6667e7fffc3e97eff14f496706bb5f0b02d71829
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:58:00 2020 +0200
+
+    adding third.txt
+
+commit 51dc1ac02c2cc254355e02bd924370e3329d42ea
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:52:30 2020 +0200
+
+    adding third.txt
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global core.pager cat
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git log
+commit d7cf6aec1accb6bef3af35dcd602290483becb41 (HEAD -> master)
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 12:01:49 2020 +0200
+
+    removing third.txt
+
+commit 3a2ce61a4893cef54b8a75930184419758ce6030
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:59:03 2020 +0200
+
+    adding fourth.txt
+
+commit 6667e7fffc3e97eff14f496706bb5f0b02d71829
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:58:00 2020 +0200
+
+    adding third.txt
+
+commit 51dc1ac02c2cc254355e02bd924370e3329d42ea
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:52:30 2020 +0200
+
+    adding third.txt
+
+commit 72ddca75e954e94ecaff631b4026dfca2212347d
+Author: unknown <ahmed.hadjsaad@iit.ens.tn>
+Date:   Fri Aug 28 11:39:00 2020 +0200
+
+    adding third.txt
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ git config --global --list
+user.email=ahmed.hadjsaad@iit.ens.tn
+core.pager=cat
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$ ^C
+
+ahmed_hp2pzx@DESKTOP-HAFNHR2 MINGW64 ~/Desktop/lear-git-again (master)
+$
